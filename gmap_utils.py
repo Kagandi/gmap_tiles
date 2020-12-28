@@ -13,3 +13,5 @@ def latlon2xy(z,lat,lon):
     x = int(x/256)#,int(x%256)
     y = int(y/256)#,int(y%256)
     return x,y
+
+# 2*(-y/256*2**(z-1)+1)/math.pi = math.log((1+math.sin(math.radians(lat)))/(1-math.sin(math.radians(lat))))
